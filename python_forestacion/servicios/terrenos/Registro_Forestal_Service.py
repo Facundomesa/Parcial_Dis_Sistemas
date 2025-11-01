@@ -1,9 +1,9 @@
 import os
 import pickle
-from entidades.cultivos.Cultivo import Cultivo
-from entidades.terrenos.Registro_Forestal import RegistroForestal
-from excepciones.Persistencia_Excepcion import PersistenciaException
-from servicios.cultivos.Cultivo_Service_Registry import CultivoServiceRegistry
+from python_forestacion.entidades.cultivos.cultivo import Cultivo
+from python_forestacion.entidades.terrenos.registro_forestal import RegistroForestal
+from python_forestacion.excepciones.persistencia_excepcion import PersistenciaException
+from python_forestacion.servicios.cultivos.cultivo_service_registry import CultivoServiceRegistry
 
 
 class RegistroForestalService:

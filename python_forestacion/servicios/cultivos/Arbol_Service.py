@@ -1,4 +1,5 @@
-from entidades.cultivos.Arbol import Arbol
+from python_forestacion.entidades.cultivos.arbol import Arbol
+
 
 class ArbolService:
     """

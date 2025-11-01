@@ -1,8 +1,9 @@
-from typing import List
-from .Tierra import Tierra
-from ..cultivos.Cultivo import Cultivo
-from ..personal.Trabajador import Trabajador
+from typing import List, TYPE_CHECKING
 
+if TYPE_CHECKING:
+    from python_forestacion.entidades.terrenos.tierra import Tierra
+    from python_forestacion.entidades.cultivos.cultivo import Cultivo
+    from python_forestacion.entidades.personal.trabajador import Trabajador
 
 class Plantacion:
     """

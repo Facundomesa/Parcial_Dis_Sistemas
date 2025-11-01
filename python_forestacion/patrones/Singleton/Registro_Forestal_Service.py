@@ -1,4 +1,4 @@
-from entidades.terrenos.Tierra import Tierra
+from entidades.terrenos.tierra import Tierra
 
 class RegistroForestalService:
     """

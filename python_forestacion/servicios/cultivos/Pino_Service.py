@@ -1,6 +1,6 @@
 from datetime import datetime
-from entidades.cultivos.Pino import Pino
-from servicios.cultivos.Arbol_Service import ArbolService
+from python_forestacion.entidades.cultivos.pino import Pino
+from python_forestacion.servicios.cultivos.arbol_service import ArbolService
 
 class PinoService(ArbolService):
     """

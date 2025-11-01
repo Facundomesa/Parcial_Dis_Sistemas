@@ -1,7 +1,5 @@
-# riego/control/control_riego_task.py
-
 import time
-from excepciones.Agua_Agotada_Excepcion import AguaAgotadaException
+from excepciones.agua_agotada_excepcion import AguaAgotadaException
 
 
 class ControlRiegoTask:

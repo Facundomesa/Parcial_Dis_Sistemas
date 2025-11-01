@@ -1,7 +1,7 @@
-from entidades.cultivos.Pino import Pino
-from entidades.cultivos.Olivo import Olivo, TipoAceituna
-from entidades.cultivos.Lechuga import Lechuga
-from entidades.cultivos.Zanahoria import Zanahoria
+from entidades.cultivos.pino import Pino
+from entidades.cultivos.olivo import Olivo, TipoAceituna
+from entidades.cultivos.lechuga import Lechuga
+from entidades.cultivos.zanahoria import Zanahoria
 
 class CultivoFactory:
     """

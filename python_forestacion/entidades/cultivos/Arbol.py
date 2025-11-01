@@ -1,5 +1,5 @@
 from threading import Lock
-from .Cultivo import Cultivo
+from .cultivo import Cultivo
 
 class Arbol(Cultivo):
     _cant_arboles = 0

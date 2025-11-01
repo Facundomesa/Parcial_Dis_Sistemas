@@ -1,7 +1,7 @@
-from entidades.cultivos.Pino import Pino
-from entidades.cultivos.Olivo import Olivo
-from entidades.cultivos.Lechuga import Lechuga
-from entidades.cultivos.Zanahoria import Zanahoria
+from python_forestacion.entidades.cultivos.pino import Pino
+from python_forestacion.entidades.cultivos.olivo import Olivo
+from python_forestacion.entidades.cultivos.lechuga import Lechuga
+from python_forestacion.entidades.cultivos.zanahoria import Zanahoria
 
 class CultivoServiceRegistry:
     """

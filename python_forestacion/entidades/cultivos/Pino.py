@@ -1,4 +1,4 @@
-from .Arbol import Arbol
+from .arbol import Arbol
 
 class Pino(Arbol):
     def __init__(self, variedad: str):

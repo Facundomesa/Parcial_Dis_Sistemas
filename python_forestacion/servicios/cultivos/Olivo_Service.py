@@ -1,6 +1,7 @@
 from datetime import datetime
-from entidades.cultivos.Olivo import Olivo
-from servicios.cultivos.Arbol_Service import ArbolService
+from python_forestacion.entidades.cultivos.olivo import Olivo
+from python_forestacion.servicios.cultivos.arbol_service import ArbolService
+
 
 class OlivoService(ArbolService):
     """

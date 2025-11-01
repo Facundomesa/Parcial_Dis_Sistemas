@@ -1,14 +1,14 @@
 import time
 from typing import Type, TypeVar, Generic
 from concurrent.futures import ThreadPoolExecutor
-from entidades.terrenos.Registro_Forestal import RegistroForestal
-from entidades.cultivos.Cultivo import Cultivo
-from servicios.negocio.Box import Box
-from servicios.cultivos.Cultivo_Service_Registry import CultivoServiceRegistry
-from servicios.terrenos.Plantacion_Service import PlantacionService
-from riego.control.Control_Riego_Task import ControlRiegoTask
-from riego.sensores.Humedad_Reader_Task import HumedadReaderTask
-from riego.sensores.Temperatura_Reader_Task import TemperaturaReaderTask
+from entidades.terrenos.registro_forestal import RegistroForestal
+from entidades.cultivos.cultivo import Cultivo
+from servicios.negocio.box import Box
+from servicios.cultivos.cultivo_service_registry import CultivoServiceRegistry
+from servicios.terrenos.plantacion_service import PlantacionService
+from riego.control.control_riego_task import ControlRiegoTask
+from riego.sensores.humedad_reader_task import HumedadReaderTask
+from riego.sensores.temperatura_reader_task import TemperaturaReaderTask
 
 T = TypeVar("T", bound=Cultivo)
 

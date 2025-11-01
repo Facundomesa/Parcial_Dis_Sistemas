@@ -1,4 +1,4 @@
-from .Hortaliza import Hortaliza
+from .hortaliza import Hortaliza
 
 class Lechuga(Hortaliza):
     def __init__(self, variedad: str):

@@ -1,6 +1,9 @@
-from typing import Optional
-from .Plantacion import Plantacion  
+from typing import TYPE_CHECKING
 
+if TYPE_CHECKING:
+    from python_forestacion.entidades.terrenos.tierra import Tierra
+    from python_forestacion.entidades.terrenos.plantacion import Plantacion
+    from typing import Optional
 class Tierra:
     """
     Clase que representa una tierra o parcela.

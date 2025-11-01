@@ -1,4 +1,4 @@
-from .Estrategia_Cultivo import EstrategiaCultivo
+from .estrategia_cultivo import EstrategiaCultivo
 
 class EstrategiaFertilizacionManual(EstrategiaCultivo):
     def ejecutar(self, cultivo):

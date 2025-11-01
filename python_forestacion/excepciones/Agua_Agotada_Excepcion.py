@@ -1,5 +1,6 @@
-from .Forestacion_Excepcion import ForestacionException
-from .Mensajes_Excepcion import MensajesException
+from python_forestacion.excepciones.forestacion_excepcion import ForestacionException
+from python_forestacion.excepciones.mensajes_excepcion import MensajesException
+
 
 class AguaAgotadaException(ForestacionException):
     """

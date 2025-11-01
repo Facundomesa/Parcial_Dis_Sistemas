@@ -1,5 +1,5 @@
-from entidades.terrenos.Tierra import Tierra
-from entidades.terrenos.Plantacion import Plantacion
+from python_forestacion.entidades.terrenos.tierra import Tierra
+from python_forestacion.entidades.terrenos.plantacion import Plantacion
 
 
 class TierraService:

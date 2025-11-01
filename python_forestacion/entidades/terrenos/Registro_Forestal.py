@@ -1,7 +1,7 @@
 from dataclasses import dataclass
-from typing import Optional
-from .Tierra import Tierra
-from .Plantacion import Plantacion
+from python_forestacion.entidades.terrenos.tierra import Tierra
+from python_forestacion.entidades.terrenos.plantacion import Plantacion
+
 
 @dataclass
 class RegistroForestal:

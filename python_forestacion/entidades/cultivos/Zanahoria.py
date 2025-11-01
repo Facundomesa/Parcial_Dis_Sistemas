@@ -1,4 +1,4 @@
-from .Hortaliza import Hortaliza
+from .hortaliza import Hortaliza
 
 class Zanahoria(Hortaliza):
     """

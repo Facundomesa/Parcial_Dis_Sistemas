@@ -1,5 +1,3 @@
-
-
 class MensajesException:
     # ============================================
     # CÓDIGOS DE ERROR

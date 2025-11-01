@@ -1,4 +1,4 @@
-from entidades.cultivos import Cultivo
+from python_forestacion.entidades.cultivos.cultivo import Cultivo
 
 class CultivoService:
     """Servicio base para operaciones comunes de cultivos."""

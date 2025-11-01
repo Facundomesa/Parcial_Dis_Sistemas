@@ -3,24 +3,23 @@ from concurrent.futures import ThreadPoolExecutor
 
 from datetime import date
 
-
 # --- Servicios principales ---
-from python_forestacion.servicios.terrenos.Tierra_Service import TierraService
-from python_forestacion.servicios.Personal.Trabajador_Service import TrabajadorService
-from python_forestacion.servicios.negocio.Fincas_Service import FincaService
-from python_forestacion.servicios.negocio.Box import Box
-from python_forestacion.servicios.terrenos.Registro_Forestal_Service import RegistroForestalService
+from python_forestacion.servicios.terrenos.tierra_service import TierraService
+from python_forestacion.servicios.Personal.trabajador_service import TrabajadorService
+from python_forestacion.servicios.negocio.fincas_service import FincaService
+from python_forestacion.servicios.negocio.box import Box
+from python_forestacion.servicios.terrenos.registro_forestal_service import RegistroForestalService
 
 # --- Servicios de cultivos ---
-from python_forestacion import PinoService
-from python_forestacion.servicios.cultivos.Olivo_Service import OlivoService
-from python_forestacion.servicios.cultivos.Lechuga_Service import LechugaService
-from python_forestacion.servicios.cultivos.Zanahoria_Service import ZanahoriaService
+from python_forestacion.servicios.cultivos.pino_service import PinoService
+from python_forestacion.servicios.cultivos.olivo_service import OlivoService
+from python_forestacion.servicios.cultivos.lechuga_service import LechugaService
+from python_forestacion.servicios.cultivos.zanahoria_service import ZanahoriaService
 
 # --- Entidades ---
-from python_forestacion.entidades.personal.Trabajador import Trabajador
-from python_forestacion.entidades.personal.Herramienta import Herramienta
-from python_forestacion.entidades.personal.Tarea import Tarea
+from python_forestacion.entidades.personal.trabajador import Trabajador
+from python_forestacion.entidades.personal.herramienta import Herramienta
+from python_forestacion.entidades.personal.tarea import Tarea
 
 
 def main():

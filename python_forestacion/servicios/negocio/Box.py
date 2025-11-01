@@ -1,5 +1,5 @@
 from typing import Generic, TypeVar, List
-from entidades.cultivos.Cultivo import Cultivo
+from entidades.cultivos.cultivo import Cultivo
 
 T = TypeVar("T", bound=Cultivo)
 

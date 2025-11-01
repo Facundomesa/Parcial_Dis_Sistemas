@@ -1,4 +1,4 @@
-from entidades.cultivos.Zanahoria import Zanahoria
+from python_forestacion.entidades.cultivos.zanahoria import Zanahoria
 
 class ZanahoriaService:
     """

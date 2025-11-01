@@ -1,5 +1,5 @@
-from .Arbol import Arbol
-from .Tipo_Aceituna import TipoAceituna  
+from .arbol import Arbol
+from .tipo_aceituna import TipoAceituna  
 
 class Olivo(Arbol):
     def __init__(self, tipo: TipoAceituna):

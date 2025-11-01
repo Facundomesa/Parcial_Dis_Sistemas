@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from .Cultivo import Cultivo
+from .cultivo import Cultivo
 
 class Cultivo(ABC):
     EDAD_MAXIMA = 20

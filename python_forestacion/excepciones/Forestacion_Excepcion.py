@@ -1,4 +1,3 @@
-
 class ForestacionException(Exception):
     """
     Excepción base para todas las excepciones del sistema de forestación.

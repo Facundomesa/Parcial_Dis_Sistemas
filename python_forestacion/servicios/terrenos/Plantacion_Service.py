@@ -1,10 +1,10 @@
-from entidades.cultivos.Pino import Pino
-from entidades.cultivos.Olivo import Olivo
-from entidades.cultivos.Lechuga import Lechuga
-from entidades.cultivos.Zanahoria import Zanahoria
-from entidades.cultivos.Tipo_Aceituna import TipoAceituna
-from excepciones.Agua_Agotada_Excepcion import AguaAgotadaException
-from excepciones.Superficie_Insuficiente_Excepcion import SuperficieInsuficienteException
+from python_forestacion.entidades.cultivos.pino import Pino
+from python_forestacion.entidades.cultivos.olivo import Olivo
+from python_forestacion.entidades.cultivos.lechuga import Lechuga
+from python_forestacion.entidades.cultivos.zanahoria import Zanahoria
+from python_forestacion.entidades.cultivos.tipo_aceituna import TipoAceituna
+from python_forestacion.excepciones.agua_agotada_excepcion import AguaAgotadaException
+from python_forestacion.excepciones.superficie_insuficiente_excepcion import SuperficieInsuficienteException
 
 
 class PlantacionService:

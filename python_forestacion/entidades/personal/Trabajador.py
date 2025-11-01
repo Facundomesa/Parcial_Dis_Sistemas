@@ -1,7 +1,7 @@
 from datetime import date
 from typing import List
-from .Apto_Medico import AptoMedico  
-from .Tarea import Tarea  
+from .apto_medico import AptoMedico  
+from .tarea import Tarea  
 
 class Trabajador:
     def __init__(self, dni: int, nombre: str, tareas: List[Tarea]):
