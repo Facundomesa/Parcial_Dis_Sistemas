@@ -1,3 +1,4 @@
+from typing import Optional, List, Dict, Any
 import os
 import pickle
 from python_forestacion.entidades.cultivos.cultivo import Cultivo

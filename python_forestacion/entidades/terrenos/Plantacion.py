@@ -12,16 +12,17 @@ class Plantacion:
     La lógica de plantar, regar, etc. está en PlantacionService.
     """
 
-    def __init__(self, id_: int, nombre: str, agua: int, tierra: Tierra):
+    def __init__(self, id_: int, nombre: str, agua: int, tierra: "Tierra"):
+        # Import dentro del método para romper circular import
+        from python_forestacion.entidades.terrenos.tierra import Tierra
         self._id = id_
         self._nombre = nombre
         self._agua_disponible = agua
-        self._situada_en = tierra
-        self._cultivos: List[Cultivo] = []
-        self._trabajadores: List[Trabajador] = []
+        self._situada_en: Tierra = tierra
+        self._cultivos: List["Cultivo"] = []
+        self._trabajadores: List["Trabajador"] = []
 
     # --- Getters y Setters ---
-
     @property
     def id(self) -> int:
         return self._id
@@ -47,41 +48,36 @@ class Plantacion:
         self._agua_disponible = value
 
     @property
-    def situada_en(self) -> Tierra:
+    def situada_en(self) -> "Tierra":
+        # Import dentro del getter para romper circular import
+        from python_forestacion.entidades.terrenos.tierra import Tierra
         return self._situada_en
 
     @situada_en.setter
-    def situada_en(self, value: Tierra):
+    def situada_en(self, value: "Tierra"):
+        from python_forestacion.entidades.terrenos.tierra import Tierra
         self._situada_en = value
 
-    # --- Manejo de listas (copias defensivas como en Java) ---
-
+    # --- Manejo de listas ---
     @property
-    def cultivos(self) -> List[Cultivo]:
-        """Retorna una copia inmutable de la lista de cultivos."""
+    def cultivos(self) -> List["Cultivo"]:
         return list(self._cultivos)
 
     @cultivos.setter
-    def cultivos(self, value: List[Cultivo]):
-        """Asigna una copia defensiva de la lista."""
+    def cultivos(self, value: List["Cultivo"]):
         self._cultivos = list(value)
 
     @property
-    def trabajadores(self) -> List[Trabajador]:
-        """Retorna una copia inmutable de la lista de trabajadores."""
+    def trabajadores(self) -> List["Trabajador"]:
         return list(self._trabajadores)
 
     @trabajadores.setter
-    def trabajadores(self, value: List[Trabajador]):
-        """Asigna una copia defensiva de la lista."""
+    def trabajadores(self, value: List["Trabajador"]):
         self._trabajadores = list(value)
 
-    # --- Métodos de acceso interno (uso por servicios) ---
-
-    def get_cultivos_interno(self) -> List[Cultivo]:
-        """Devuelve la lista mutable de cultivos (uso interno de servicios)."""
+    # --- Métodos internos ---
+    def get_cultivos_interno(self) -> List["Cultivo"]:
         return self._cultivos
 
-    def get_trabajadores_interno(self) -> List[Trabajador]:
-        """Devuelve la lista mutable de trabajadores (uso interno de servicios)."""
+    def get_trabajadores_interno(self) -> List["Trabajador"]:
         return self._trabajadores

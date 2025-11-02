@@ -15,11 +15,12 @@ class PinoService(ArbolService):
         mes = datetime.now().month
         return 9 <= mes <= 12
 
-    def absorver_agua(self, pino: Pino) -> int:
+    def absorber_agua(self, pino: Pino) -> int:
+        """Corrige typo y usa el método absorber_agua del cultivo"""
         mes = datetime.now().month
-        agua_absorvida = 2 if mes in [1,2,3,4,9,10,11,12] else 0
-        pino.set_agua(pino.get_agua() + agua_absorvida)
-        return agua_absorvida
+        agua_absorbida = 2 if mes in [1,2,3,4,9,10,11,12] else 0
+        pino.absorber_agua(agua_absorbida)
+        return agua_absorbida
 
     def consumir_agua(self, pino: Pino) -> int:
         mes = datetime.now().month

@@ -2,7 +2,6 @@ from datetime import datetime
 from python_forestacion.entidades.cultivos.olivo import Olivo
 from python_forestacion.servicios.cultivos.arbol_service import ArbolService
 
-
 class OlivoService(ArbolService):
     """
     Servicio para operaciones específicas del Olivo.
@@ -20,11 +19,12 @@ class OlivoService(ArbolService):
         mes = datetime.now().month
         return 9 <= mes <= 12
 
-    def absorver_agua(self, olivo: Olivo) -> int:
+    def absorber_agua(self, olivo: Olivo) -> int:
+        """Corrige typo y usa el método absorber_agua del cultivo"""
         mes = datetime.now().month
-        agua_absorvida = 1 if mes in [1,2,3,4,9,10,11,12] else 0
-        olivo.set_agua(olivo.get_agua() + agua_absorvida)
-        return agua_absorvida
+        agua_absorbida = 1 if mes in [1,2,3,4,9,10,11,12] else 0
+        olivo.absorber_agua(agua_absorbida)
+        return agua_absorbida
 
     def consumir_agua(self, olivo: Olivo) -> int:
         mes = datetime.now().month
@@ -41,5 +41,5 @@ class OlivoService(ArbolService):
 
     def mostrar_datos(self, olivo: Olivo):
         print(f"Cultivo {type(olivo).__name__}")
-        print(f"Fruto: {olivo.fruto.name}")
+        print(f"Fruto: {olivo.get_fruto().name}")
         print(f"Altura: {olivo.get_altura()}")

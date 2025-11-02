@@ -1,9 +1,9 @@
-from typing import TYPE_CHECKING
+from typing import Optional, TYPE_CHECKING
 
+# Solo para anotaciones de tipo estáticas
 if TYPE_CHECKING:
-    from python_forestacion.entidades.terrenos.tierra import Tierra
     from python_forestacion.entidades.terrenos.plantacion import Plantacion
-    from typing import Optional
+
 class Tierra:
     """
     Clase que representa una tierra o parcela.
@@ -15,9 +15,9 @@ class Tierra:
         self._id = id_padron_catastral
         self._superficie = superficie
         self._domicilio = domicilio
-        self._finca: Optional[Plantacion] = None
+        self._finca: Optional["Plantacion"] = None  
 
-    # Getters y Setters (Pythonic con propiedades)
+    
     @property
     def id(self) -> int:
         return self._id
@@ -43,9 +43,11 @@ class Tierra:
         self._domicilio = value
 
     @property
-    def finca(self) -> Optional[Plantacion]:
+    def finca(self) -> Optional["Plantacion"]:
+        from python_forestacion.entidades.terrenos.plantacion import Plantacion
         return self._finca
 
     @finca.setter
-    def finca(self, value: Plantacion):
+    def finca(self, value: "Plantacion"):
+        from python_forestacion.entidades.terrenos.plantacion import Plantacion
         self._finca = value
