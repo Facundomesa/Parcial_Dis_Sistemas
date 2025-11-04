@@ -1,4 +1,3 @@
-# Main.py
 from datetime import date
 
 # Servicios
