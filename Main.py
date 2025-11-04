@@ -1,19 +1,13 @@
 from datetime import date
-
-# Servicios
 from python_forestacion.servicios.terrenos.tierra_service import TierraService
 from python_forestacion.servicios.terrenos.plantacion_service import PlantacionService
 from python_forestacion.servicios.terrenos.registro_forestal_service import RegistroForestalService
 from python_forestacion.servicios.personal.trabajador_service import TrabajadorService
-
-# Servicios de cultivos
 from python_forestacion.servicios.cultivos.pino_service import PinoService
 from python_forestacion.servicios.cultivos.olivo_service import OlivoService
 from python_forestacion.servicios.cultivos.lechuga_service import LechugaService
 from python_forestacion.servicios.cultivos.zanahoria_service import ZanahoriaService
 from python_forestacion.servicios.cultivos.cultivo_service_registry import CultivoServiceRegistry
-
-# Entidades
 from python_forestacion.entidades.personal.trabajador import Trabajador
 from python_forestacion.entidades.personal.herramienta import Herramienta
 from python_forestacion.entidades.personal.tarea import Tarea
